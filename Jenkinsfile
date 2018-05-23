@@ -1,4 +1,7 @@
 pipeline {
+
+    agent none
+
     stages {
         stage('Build') { 
             agent {docker 'maven:3.3.9'}
